@@ -34,7 +34,7 @@ git diff --stat --color master github/master
 
 echo -e '\n--------------------------------------------------'
 
-read -p "Push dev and master of repo $(pwd) (1=yes otherwhise exit): " opt
+read -p "Push dev and master of repo $(pwd) to Github and Bitbucket (1=yes otherwhise exit): " opt
 if [ "$opt" != "1" ]; then exit; fi
 
 set -xe
