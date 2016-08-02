@@ -41,6 +41,11 @@ git push --tags github master
 git remote add bitbucket git@bitbucket.org:username/repo.git
 ```
 
+repoinfo.sh
+---------------
+
+Display repo info
+
 pushrepo.sh
 -----------
 
