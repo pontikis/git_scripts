@@ -1,3 +1,10 @@
+#-------------------------------------------------------------------------------
+# SCRIPT.........: pullrepo.sh
+# ACTION.........: Pull dev and master branch from Github to a local repo
+# COPYRIGHT......: Christos Pontikis (http://www.pontikis.gr)
+# LICENSE........: MIT (https://opensource.org/licenses/MIT)
+#-------------------------------------------------------------------------------
+
 #!/bin/bash
 
 echo '##################################################'
