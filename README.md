@@ -60,3 +60,9 @@ pulldevrepo.sh
 --------------
 
 Pull dev branch from Github to a local repo
+
+
+pullmasterrepo.sh
+-----------------
+
+Pull master branch from Github to a local repo
