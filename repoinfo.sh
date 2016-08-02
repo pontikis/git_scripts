@@ -18,12 +18,21 @@ git remote -v
 echo -e '\nbranches .........................................'
 git branch -a
 
+local_dev=`git branch -a | grep -F ' dev'`
+if [ $local_dev ]
+then
+
 echo -e '\ncurrent dev version ..............................'
 echo "local  `git describe dev`"
 echo "github `git describe github/dev`"
 
 echo -e '\ncompare local and github dev .....................'
 git diff --stat --color dev github/dev
+
+else
+echo -e '\nlocal dev branch not found .......................'
+fi
+
 
 echo -e '\ncurrent master version ...........................'
 echo "local  `git describe master`"
