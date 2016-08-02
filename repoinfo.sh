@@ -19,7 +19,7 @@ echo -e '\nbranches .........................................'
 git branch -a
 
 local_dev=`git branch -a | grep -F ' dev'`
-if [ $local_dev ]
+if [ -z "$local_dev" ]
 then
 
 echo -e '\ncurrent dev version ..............................'
@@ -40,7 +40,7 @@ echo "github `git describe github/master`"
 echo -e '\ncompare local and github master ..................'
 git diff --stat --color master github/master
 
-if [ $local_dev ]
+if [ -z "$local_dev" ]
 then
 
 echo -e '\ncompare local dev and master .....................'
