@@ -30,9 +30,10 @@ echo -e '\ncompare local and github dev .....................'
 git diff --stat --color dev github/dev
 
 else
-echo -e '\nlocal dev branch not found .......................'
-fi
 
+echo -e '\nlocal dev branch not found ...'
+
+fi
 
 echo -e '\ncurrent master version ...........................'
 echo "local  `git describe master`"
@@ -40,5 +41,13 @@ echo "github `git describe github/master`"
 
 echo -e '\ncompare local and github master ..................'
 git diff --stat --color master github/master
+
+if [ $local_dev ]
+then
+
+echo -e '\ncompare local dev and master .....................'
+git diff --name-status dev master
+
+fi
 
 echo -e '\n--------------------------------------------------'
