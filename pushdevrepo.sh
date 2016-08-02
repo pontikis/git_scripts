@@ -1,3 +1,10 @@
+#-------------------------------------------------------------------------------
+# SCRIPT.........: pushrepo.sh
+# ACTION.........: Push dev branch from a local repo to Github and Bitbucket
+# COPYRIGHT......: Christos Pontikis (http://www.pontikis.gr)
+# LICENSE........: MIT (https://opensource.org/licenses/MIT)
+#-------------------------------------------------------------------------------
+
 #!/bin/bash
 
 echo '##################################################'
