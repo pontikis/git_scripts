@@ -23,7 +23,7 @@ echo "local  `git describe master`"
 echo "github `git describe github/master`"
 
 echo -e '\ncompare local and github master .....................'
-git diff --stat --color dev github/dev
+git diff --stat --color master github/master
 
 echo -e '\n--------------------------------------------------'
 
