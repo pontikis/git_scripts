@@ -22,6 +22,10 @@ local_dev=`git branch -a | grep -F ' dev'`
 if [ -z "$local_dev" ]
 then
 
+echo -e '\nlocal dev branch not found ...'
+
+else
+
 echo -e '\ncurrent dev version ..............................'
 echo "local  `git describe dev`"
 echo "github `git describe github/dev`"
@@ -29,8 +33,6 @@ echo "github `git describe github/dev`"
 echo -e '\ncompare local and github dev .....................'
 git diff --stat --color dev github/dev
 
-else
-echo -e '\nlocal dev branch not found ...'
 fi
 
 echo -e '\ncurrent master version ...........................'
@@ -40,7 +42,7 @@ echo "github `git describe github/master`"
 echo -e '\ncompare local and github master ..................'
 git diff --stat --color master github/master
 
-if [ -z "$local_dev" ]
+if [ ! -z "$local_dev" ]
 then
 
 echo -e '\ncompare local dev and master .....................'
