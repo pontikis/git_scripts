@@ -40,3 +40,23 @@ git push --tags github master
 ```
 git remote add bitbucket git@bitbucket.org:username/repo.git
 ```
+
+pushrepo.sh
+-----------
+
+Push dev and master branches from a local repo to Github and Bitbucket
+
+pushdevrepo.sh
+--------------
+
+Push dev branch from a local repo to Github and Bitbucket
+
+pullrepo.sh
+-----------
+
+Pull dev and master branches from Github to a local repo
+
+pulldevrepo.sh
+--------------
+
+Pull dev branch from Github to a local repo
