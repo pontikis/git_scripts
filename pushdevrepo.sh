@@ -27,7 +27,7 @@ git diff --stat --color dev github/dev
 
 echo -e '\n--------------------------------------------------'
 
-read -p "Push dev of repo $(pwd) (1=yes otherwhise exit): " opt
+read -p "Push dev of repo $(pwd) to Github and Bitbucket (1=yes otherwhise exit): " opt
 if [ "$opt" != "1" ]; then exit; fi
 
 set -xe
