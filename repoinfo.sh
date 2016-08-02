@@ -1,0 +1,35 @@
+#-------------------------------------------------------------------------------
+# SCRIPT.........: repoinfo.sh
+# ACTION.........: Display repo info
+# COPYRIGHT......: Christos Pontikis (http://www.pontikis.gr)
+# LICENSE........: MIT (https://opensource.org/licenses/MIT)
+#-------------------------------------------------------------------------------
+
+#!/bin/bash
+
+echo '##################################################'
+
+echo -e '\ngit status .......................................'
+git status
+
+echo -e '\nremote repositories ..............................'
+git remote -v
+
+echo -e '\nbranches .........................................'
+git branch -a
+
+echo -e '\ncurrent dev version ..............................'
+echo "local  `git describe dev`"
+echo "github `git describe github/dev`"
+
+echo -e '\ncompare local and github dev .....................'
+git diff --stat --color dev github/dev
+
+echo -e '\ncurrent master version ...........................'
+echo "local  `git describe master`"
+echo "github `git describe github/master`"
+
+echo -e '\ncompare local and github master ..................'
+git diff --stat --color master github/master
+
+echo -e '\n--------------------------------------------------'

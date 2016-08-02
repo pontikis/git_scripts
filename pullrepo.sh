@@ -7,32 +7,7 @@
 
 #!/bin/bash
 
-echo '##################################################'
-
-echo -e '\ngit status .......................................'
-git status
-
-echo -e '\nremote repositories ..............................'
-git remote -v
-
-echo -e '\nbranches .........................................'
-git branch -a
-
-echo -e '\ncurrent dev version ..............................'
-echo "local  `git describe dev`"
-echo "github `git describe github/dev`"
-
-echo -e '\ncompare local and github dev .....................'
-git diff --stat --color dev github/dev
-
-echo -e '\ncurrent master version ...........................'
-echo "local  `git describe master`"
-echo "github `git describe github/master`"
-
-echo -e '\ncompare local and github master ..................'
-git diff --stat --color master github/master
-
-echo -e '\n--------------------------------------------------'
+source repoinfo.sh
 
 read -p "Pull dev and master from github to repo $(pwd) ? (1=yes otherwhise exit): " opt
 if [ "$opt" != "1" ]; then exit; fi
