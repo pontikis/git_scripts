@@ -4,6 +4,8 @@
 Common workflow
 ---------------
 
+These scripts require to use the following workflow:
+
 * Create repository in Github https://github.com/new
 * Clone repository 
 ```
@@ -28,6 +30,7 @@ git tag -a v0.1.0 -m "Just started"
 ```
 * Push 
 ```
+git checkout dev
 git push --tags github dev
 git checkout master 
 git push --tags github master 
