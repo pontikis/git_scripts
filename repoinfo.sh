@@ -46,7 +46,7 @@ if [ ! -z "$local_dev" ]
 then
 
 echo -e '\ncompare local dev and master .....................'
-git diff --name-status dev master
+git diff --stat --color dev master
 
 fi
 
