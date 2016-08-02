@@ -30,9 +30,7 @@ echo -e '\ncompare local and github dev .....................'
 git diff --stat --color dev github/dev
 
 else
-
 echo -e '\nlocal dev branch not found ...'
-
 fi
 
 echo -e '\ncurrent master version ...........................'
