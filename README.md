@@ -41,33 +41,40 @@ git push --tags github master
 git remote add bitbucket git@bitbucket.org:username/repo.git
 ```
 
-repoinfo.sh
----------------
+Short description
+-----------------
+
+### repoinfo.sh
 
 Display repo info
 
-pushrepo.sh
------------
+### pushrepo.sh
 
 Push dev and master branches from a local repo to Github and Bitbucket
 
-pushdevrepo.sh
---------------
+### pushdevrepo.sh
 
 Push dev branch from a local repo to Github and Bitbucket
 
-pullrepo.sh
------------
+### pullrepo.sh
 
 Pull dev and master branches from Github to a local repo
 
-pulldevrepo.sh
---------------
+### pulldevrepo.sh
 
 Pull dev branch from Github to a local repo
 
-
-pullmasterrepo.sh
------------------
+### pullmasterrepo.sh
 
 Pull master branch from Github to a local repo
+
+Requirements
+------------
+
+Add installation path to your PATH. Usually:
+
+```
+nano ~/.bash_profile
+export PATH="${PATH}:/path/to/git_scripts"
+source ~/.bash_profile
+```
