@@ -10,6 +10,11 @@ License [MIT][mit]
 [mit]: https://raw.github.com/pontikis/git_scripts/master/LICENSE
 
 
+Release 0.9.2 (17 Aug 2016)
+---------------------------
+minor changes (make scripts executable)
+
+
 Release 0.9.1 (17 Aug 2016)
 ---------------------------
 quick scripts added
