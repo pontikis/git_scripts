@@ -20,14 +20,17 @@ cd repo
 ```
 git remote rename origin github
 ```
+
 * Create dev branch
 ```
 git branch -b dev
 ```
+
 * Create first tag
 ```
 git tag -a v0.1.0 -m "Just started"
 ```
+
 * Push 
 ```
 git checkout dev
@@ -35,7 +38,9 @@ git push --tags github dev
 git checkout master 
 git push --tags github master 
 ```
+
 * Import repository to Bitbucket (optional) https://bitbucket.org/repo/import
+
 * Add Bitbucket as remote
 ```
 git remote add bitbucket git@bitbucket.org:username/repo.git
@@ -47,6 +52,14 @@ Short description
 ### repoinfo.sh
 
 Display repo info
+
+### pushdev-github.sh
+
+Push only dev only to Github without show repo info and without confirmation
+
+### pulldev-github.sh 
+
+Pull from Github and merge only dev without show repo info and without confirmation
 
 ### pushrepo.sh
 
